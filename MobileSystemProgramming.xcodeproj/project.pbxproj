@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		C9252B2D25D1958C009E6C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9252B2C25D1958C009E6C1B /* AppDelegate.swift */; };
 		C9252B2F25D1958C009E6C1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9252B2E25D1958C009E6C1B /* SceneDelegate.swift */; };
-		C9252B3125D1958C009E6C1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9252B3025D1958C009E6C1B /* ViewController.swift */; };
+		C9252B3125D1958C009E6C1B /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9252B3025D1958C009E6C1B /* PersonalViewController.swift */; };
 		C9252B3425D1958C009E6C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9252B3225D1958C009E6C1B /* Main.storyboard */; };
 		C9252B3925D19591009E6C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9252B3725D19591009E6C1B /* LaunchScreen.storyboard */; };
 		C9252B4225D19621009E6C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9252B4125D19621009E6C1B /* Assets.xcassets */; };
 		C9252B4A25D19F24009E6C1B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C9252B4925D19F24009E6C1B /* .gitignore */; };
+		C9D8F61F25E2C1C100D0DDF9 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8F61E25E2C1C100D0DDF9 /* PaintViewController.swift */; };
+		C9D8F62A25E2C94200D0DDF9 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8F62925E2C94200D0DDF9 /* GraphicView.swift */; };
+		C9D8F62D25E2C94E00D0DDF9 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8F62C25E2C94E00D0DDF9 /* PieChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9252B2925D1958C009E6C1B /* MobileSystemProgramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileSystemProgramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9252B2C25D1958C009E6C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9252B2E25D1958C009E6C1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9252B3025D1958C009E6C1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9252B3025D1958C009E6C1B /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		C9252B3325D1958C009E6C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9252B3825D19591009E6C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9252B3A25D19591009E6C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9252B4125D19621009E6C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/AppIcons (1)/Assets.xcassets"; sourceTree = "<group>"; };
 		C9252B4925D19F24009E6C1B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C9D8F61E25E2C1C100D0DDF9 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
+		C9D8F62925E2C94200D0DDF9 /* GraphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicView.swift; sourceTree = "<group>"; };
+		C9D8F62C25E2C94E00D0DDF9 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +65,50 @@
 		C9252B2B25D1958C009E6C1B /* MobileSystemProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				C9D8F62125E2C84600D0DDF9 /* TabsViewControllers */,
 				C9252B2C25D1958C009E6C1B /* AppDelegate.swift */,
 				C9252B2E25D1958C009E6C1B /* SceneDelegate.swift */,
-				C9252B3025D1958C009E6C1B /* ViewController.swift */,
 				C9252B3225D1958C009E6C1B /* Main.storyboard */,
 				C9252B4125D19621009E6C1B /* Assets.xcassets */,
 				C9252B3725D19591009E6C1B /* LaunchScreen.storyboard */,
 				C9252B3A25D19591009E6C1B /* Info.plist */,
 			);
 			path = MobileSystemProgramming;
+			sourceTree = "<group>";
+		};
+		C9D8F62125E2C84600D0DDF9 /* TabsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9D8F63125E2D30B00D0DDF9 /* PersonalViewController */,
+				C9D8F63025E2D2F100D0DDF9 /* PaintViewController */,
+			);
+			path = TabsViewControllers;
+			sourceTree = "<group>";
+		};
+		C9D8F62325E2C8E800D0DDF9 /* PaintViews */ = {
+			isa = PBXGroup;
+			children = (
+				C9D8F62925E2C94200D0DDF9 /* GraphicView.swift */,
+				C9D8F62C25E2C94E00D0DDF9 /* PieChartView.swift */,
+			);
+			path = PaintViews;
+			sourceTree = "<group>";
+		};
+		C9D8F63025E2D2F100D0DDF9 /* PaintViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9D8F62325E2C8E800D0DDF9 /* PaintViews */,
+				C9D8F61E25E2C1C100D0DDF9 /* PaintViewController.swift */,
+			);
+			path = PaintViewController;
+			sourceTree = "<group>";
+		};
+		C9D8F63125E2D30B00D0DDF9 /* PersonalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9252B3025D1958C009E6C1B /* PersonalViewController.swift */,
+			);
+			path = PersonalViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9252B3125D1958C009E6C1B /* ViewController.swift in Sources */,
+				C9252B3125D1958C009E6C1B /* PersonalViewController.swift in Sources */,
+				C9D8F62D25E2C94E00D0DDF9 /* PieChartView.swift in Sources */,
 				C9252B2D25D1958C009E6C1B /* AppDelegate.swift in Sources */,
 				C9252B2F25D1958C009E6C1B /* SceneDelegate.swift in Sources */,
+				C9D8F62A25E2C94200D0DDF9 /* GraphicView.swift in Sources */,
+				C9D8F61F25E2C1C100D0DDF9 /* PaintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

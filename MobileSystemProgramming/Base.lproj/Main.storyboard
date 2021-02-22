@@ -8,31 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Paint mustache-->
         <scene sceneID="hrF-yt-ujz">
             <objects>
-                <viewController id="OyC-5D-rt6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xQ3-jw-2hx">
+                <viewController id="OyC-5D-rt6" customClass="PaintViewController" customModule="MobileSystemProgramming" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PdY-VX-jbJ" userLabel="GraphicView" customClass="GraphicView" customModule="MobileSystemProgramming" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="F7q-Pk-0vq"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SgT-02-reN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Ivy-aj-iNu"/>
+                    <tabBarItem key="tabBarItem" title="Paint mustache" image="mustache" catalog="system" id="Ivy-aj-iNu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbI-AA-a1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="rjU-EL-vCh">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="tca-Rm-0OI"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="1197" y="359"/>
         </scene>
         <!--Personal-->
         <scene sceneID="IyB-Rl-zKc">
             <objects>
-                <viewController id="vzw-vx-L3X" customClass="ViewController" customModule="MobileSystemProgramming" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vzw-vx-L3X" customClass="PersonalViewController" customModule="MobileSystemProgramming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A63-y6-2Zg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стародубцев Ілля ІВ-82 ЗК ІВ-8223" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-sM-iEK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стародубцев Ілля ІВ-82 ЗК ІВ-8223" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-sM-iEK">
                                 <rect key="frame" x="46.666666666666657" y="396" width="282" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -76,6 +82,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mustache" catalog="system" width="128" height="52"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
