@@ -241,25 +241,29 @@ class CoordinateIS {
 let latitudeZero = CoordinateIS()
 let longitudeZero = CoordinateIS()
 
-latitudeZero.getCoordinate()
-longitudeZero.getCoordinate()
+print()
+print("Latitude of 0 coordinate \(latitudeZero.getCoordinate())")
+print("Longitude of 0 coordinate \(longitudeZero.getCoordinate())")
+print()
 
-latitudeZero.getCoordinateDecimal()
-longitudeZero.getCoordinateDecimal()
-
-latitudeZero.getCoordinateDecimal()
+print("Latitude of 0 coordinate decimal \(latitudeZero.getCoordinateDecimal())")
+print("Longitude of 0 coordinate decimal \(longitudeZero.getCoordinateDecimal())")
+print()
 
 let latitude = CoordinateIS(degrees: 50, minutes: 28, seconds: 19, direction: .latitude)
 let longitude = CoordinateIS(degrees: -30, minutes: 23, seconds: 46, direction: .longtitude)
 
-latitude.getCoordinate()
-longitude.getCoordinate()
+print("50°28′19″ пн. ш. coordinate: \(latitude.getCoordinate())")
+print("30°23′46″ сх. д. coordinate: \(longitude.getCoordinate())")
+print()
 
-latitude.getCoordinateDecimal()
-longitude.getCoordinateDecimal()
+print("50°28′19″ пн. ш. coordinate of decimal: \(latitude.getCoordinateDecimal())")
+print("30°23′46″ сх. д. coordinate of decimal: \(longitude.getCoordinateDecimal())")
+print()
 
-latitude.getMiddleCoordinate(coordinate: latitudeZero)?.getCoordinate()
-longitude.getMiddleCoordinate(coordinate: longitudeZero)?.getCoordinate()
+print("Get middle coordinate between 50°28′19″ пн. ш. and 0: \(latitude.getMiddleCoordinate(coordinate: latitudeZero)?.getCoordinate() ?? "")")
+print("Get middle coordinate between 30°23′46″ сх. д. and 0: \(longitude.getMiddleCoordinate(coordinate: longitudeZero)?.getCoordinate() ?? "")")
+print()
 
 //50°28′17″ пн. ш. 30°25′22″ сх. д. (Нивки)
 let latitude1 = CoordinateIS(degrees: 50, minutes: 28, seconds: 17, direction: .latitude)
@@ -267,3 +271,11 @@ let longitude1 = CoordinateIS(degrees: -30, minutes: 25, seconds: 22, direction:
 
 let middleCoordinateLatitude = CoordinateIS.getMiddleCoordinatesOfTwoCoordinates(coordinateOne: latitude, coordinateTwo: latitude1)?.getCoordinate()
 let middleCoordinateLongitude = CoordinateIS.getMiddleCoordinatesOfTwoCoordinates(coordinateOne: longitude, coordinateTwo: longitude1)?.getCoordinate()
+
+print("Get middle coordinate between 50°28′19″ пн. ш. and 50°28′17″ пн. ш.: \(middleCoordinateLatitude ?? "")")
+print("Get middle coordinate between 30°23′46″ сх. д. and 30°25′22″ сх. д.: \(middleCoordinateLongitude ?? "")")
+print()
+
+let middleCoordinateBetweenLongitudeAndLatitude = CoordinateIS.getMiddleCoordinatesOfTwoCoordinates(coordinateOne: longitude, coordinateTwo: latitude1)?.getCoordinate()
+
+print("Get middle coordinate between 30°23′46″ сх. д. and 50°28′17″ пн. ш.: \(middleCoordinateBetweenLongitudeAndLatitude ?? "")")
