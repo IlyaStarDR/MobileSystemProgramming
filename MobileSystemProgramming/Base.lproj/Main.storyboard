@@ -12,23 +12,93 @@
         <scene sceneID="hrF-yt-ujz">
             <objects>
                 <viewController id="OyC-5D-rt6" customClass="PaintViewController" customModule="MobileSystemProgramming" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PdY-VX-jbJ" userLabel="GraphicView" customClass="GraphicView" customModule="MobileSystemProgramming" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="PdY-VX-jbJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EOT-95-uaQ">
+                                <rect key="frame" x="0.0" y="105.33333333333331" width="375" height="562.33333333333348"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bci-dn-kyZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="bki-yM-FF0"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Graphic"/>
+                                            <segment title="Pie Chart"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentControlAction:" destination="OyC-5D-rt6" eventType="valueChanged" id="ZZw-fi-KDa"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myw-Rk-Gny">
+                                        <rect key="frame" x="0.0" y="31" width="375" height="531.33333333333337"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-b7-PG4" customClass="GraphicView" customModule="MobileSystemProgramming" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="531.33333333333337"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </view>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-y3-aKT" customClass="PieChartView" customModule="MobileSystemProgramming" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="531.33333333333337"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Ned-b7-PG4" firstAttribute="leading" secondItem="myw-Rk-Gny" secondAttribute="leading" id="1gI-9e-Wm4"/>
+                                            <constraint firstItem="GpZ-y3-aKT" firstAttribute="top" secondItem="myw-Rk-Gny" secondAttribute="top" id="Cod-Rs-P0U"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ned-b7-PG4" secondAttribute="trailing" id="b7e-GS-OxO"/>
+                                            <constraint firstItem="Ned-b7-PG4" firstAttribute="top" secondItem="myw-Rk-Gny" secondAttribute="top" id="c5s-bd-GA9"/>
+                                            <constraint firstItem="GpZ-y3-aKT" firstAttribute="leading" secondItem="myw-Rk-Gny" secondAttribute="leading" id="k8B-gM-TNv"/>
+                                            <constraint firstAttribute="trailing" secondItem="GpZ-y3-aKT" secondAttribute="trailing" id="rFy-gR-BE0"/>
+                                            <constraint firstAttribute="bottom" secondItem="GpZ-y3-aKT" secondAttribute="bottom" id="rMQ-Q4-7FS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ned-b7-PG4" secondAttribute="bottom" id="zaa-6F-MVI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EOT-95-uaQ" secondAttribute="height" multiplier="1:1.5" id="Llp-Vp-RKk"/>
+                                </constraints>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Llp-Vp-RKk"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SgT-02-reN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EOT-95-uaQ" firstAttribute="centerX" secondItem="SgT-02-reN" secondAttribute="centerX" id="6QJ-u4-bPP"/>
+                            <constraint firstItem="EOT-95-uaQ" firstAttribute="width" secondItem="SgT-02-reN" secondAttribute="width" id="KUr-1a-WL3"/>
+                            <constraint firstItem="EOT-95-uaQ" firstAttribute="top" secondItem="SgT-02-reN" secondAttribute="top" id="jvu-0P-vlb"/>
+                            <constraint firstItem="SgT-02-reN" firstAttribute="bottom" secondItem="EOT-95-uaQ" secondAttribute="bottom" id="lWN-9F-DNg"/>
+                            <constraint firstItem="EOT-95-uaQ" firstAttribute="centerY" secondItem="SgT-02-reN" secondAttribute="centerY" id="rqf-5p-pXM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jvu-0P-vlb"/>
+                                <exclude reference="lWN-9F-DNg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="jvu-0P-vlb"/>
+                                <include reference="lWN-9F-DNg"/>
+                                <exclude reference="rqf-5p-pXM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Paint mustache" image="mustache" catalog="system" id="Ivy-aj-iNu"/>
+                    <connections>
+                        <outlet property="graphicView" destination="Ned-b7-PG4" id="b81-41-3M2"/>
+                        <outlet property="pieChartView" destination="GpZ-y3-aKT" id="gQ6-zk-1C0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbI-AA-a1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="rjU-EL-vCh">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <viewLayoutGuide key="safeArea" id="tca-Rm-0OI"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </view>
             </objects>
-            <point key="canvasLocation" x="1197" y="359"/>
+            <point key="canvasLocation" x="1195.5665024630543" y="428"/>
         </scene>
         <!--Personal-->
         <scene sceneID="IyB-Rl-zKc">
@@ -38,8 +108,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стародубцев Ілля ІВ-82 ЗК ІВ-8223" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-sM-iEK">
-                                <rect key="frame" x="46.666666666666657" y="396" width="282" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стародубцев Ілля  ІВ-82  ЗК ІВ-8223" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-sM-iEK">
+                                <rect key="frame" x="114.66666666666669" y="375.66666666666669" width="146" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,6 +159,12 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
