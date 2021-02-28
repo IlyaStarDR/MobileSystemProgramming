@@ -46,5 +46,5 @@
 
 ## Скріншоти роботи додатка
 
-<img src="" width="300">
-<img src="" width="1000">
+![vertical](horizontal.png)
+![horizontal](vertical.png)
