@@ -37,11 +37,11 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-b7-PG4" customClass="GraphicView" customModule="MobileSystemProgramming" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="531.33333333333337"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-y3-aKT" customClass="PieChartView" customModule="MobileSystemProgramming" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="531.33333333333337"/>
-                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,14 +78,14 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="jvu-0P-vlb"/>
                                 <exclude reference="lWN-9F-DNg"/>
+                                <exclude reference="jvu-0P-vlb"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="jvu-0P-vlb"/>
                                 <include reference="lWN-9F-DNg"/>
+                                <include reference="jvu-0P-vlb"/>
                                 <exclude reference="rqf-5p-pXM"/>
                             </mask>
                         </variation>
@@ -159,12 +159,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
