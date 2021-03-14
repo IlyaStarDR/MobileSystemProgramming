@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NmI-8c-hUR">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,16 +13,16 @@
             <objects>
                 <viewController id="OyC-5D-rt6" customClass="PaintViewController" customModule="MobileSystemProgramming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PdY-VX-jbJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EOT-95-uaQ">
-                                <rect key="frame" x="0.0" y="105.33333333333331" width="375" height="562.33333333333348"/>
+                                <rect key="frame" x="260" y="0.0" width="292" height="322"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bci-dn-kyZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="bki-yM-FF0"/>
+                                            <constraint firstAttribute="height" constant="30" id="bki-yM-FF0"/>
                                         </constraints>
                                         <segments>
                                             <segment title="Graphic"/>
@@ -33,14 +33,14 @@
                                         </connections>
                                     </segmentedControl>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myw-Rk-Gny">
-                                        <rect key="frame" x="0.0" y="31" width="375" height="531.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="30" width="292" height="292"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-b7-PG4" customClass="GraphicView" customModule="MobileSystemProgramming" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="531.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="292"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpZ-y3-aKT" customClass="PieChartView" customModule="MobileSystemProgramming" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="531.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="292"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -58,11 +58,11 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="EOT-95-uaQ" secondAttribute="height" multiplier="1:1.5" id="Llp-Vp-RKk"/>
+                                    <constraint firstAttribute="width" secondItem="EOT-95-uaQ" secondAttribute="height" multiplier="1:1" constant="-30" id="Llp-Vp-RKk"/>
                                 </constraints>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
-                                        <exclude reference="Llp-Vp-RKk"/>
+                                        <include reference="Llp-Vp-RKk"/>
                                     </mask>
                                 </variation>
                             </stackView>
@@ -85,6 +85,7 @@
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="lWN-9F-DNg"/>
+                                <exclude reference="KUr-1a-WL3"/>
                                 <include reference="jvu-0P-vlb"/>
                                 <exclude reference="rqf-5p-pXM"/>
                             </mask>
@@ -105,11 +106,11 @@
             <objects>
                 <viewController id="vzw-vx-L3X" customClass="PersonalViewController" customModule="MobileSystemProgramming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A63-y6-2Zg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стародубцев Ілля  ІВ-82  ЗК ІВ-8223" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-sM-iEK">
-                                <rect key="frame" x="114.66666666666669" y="375.66666666666669" width="146" height="61"/>
+                                <rect key="frame" x="333" y="157" width="146" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

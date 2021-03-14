@@ -16,9 +16,7 @@ class PieChartView: UIView {
                          Unit(value: 0.05, color: .purple)
     
     ]
-    
-    // MARK: - Drawing
-    
+        
     override func draw(_ rect: CGRect) {
         
         var lastAngle: CGFloat = 0
