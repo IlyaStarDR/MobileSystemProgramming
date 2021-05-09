@@ -26,6 +26,7 @@ class BooksViewController: UIViewController {
         filteredBooks = books
         searchBar.delegate = self
         notFoundLabel.isHidden = true
+        hideKeyboardWhenTappedAround()
     }
     
     @IBAction func addBookAction(_ sender: UIBarButtonItem) {
@@ -161,5 +162,15 @@ extension BooksViewController: UISearchBarDelegate {
         notFoundLabel.isHidden = !filteredBooks.isEmpty
         booksTableView.isHidden = filteredBooks.isEmpty
         booksTableView.reloadData()
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
