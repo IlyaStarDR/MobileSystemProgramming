@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91019D52648288F00C84E20 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91019D42648288F00C84E20 /* GalleryViewController.swift */; };
+		C91019D9264829B100C84E20 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91019D8264829B100C84E20 /* GalleryCollectionViewCell.swift */; };
+		C91019DC264832A200C84E20 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91019DB264832A200C84E20 /* ImagePicker.swift */; };
 		C91299FF25FE325D00FBCF00 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91299FE25FE325D00FBCF00 /* BooksViewController.swift */; };
 		C9129A0525FE379F00FBCF00 /* BooksList.txt in Resources */ = {isa = PBXBuildFile; fileRef = C9129A0325FE379F00FBCF00 /* BooksList.txt */; };
 		C9129A1125FE37B800FBCF00 /* Image_03.png in Resources */ = {isa = PBXBuildFile; fileRef = C9129A0925FE37B700FBCF00 /* Image_03.png */; };
@@ -45,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C91019D42648288F00C84E20 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		C91019D8264829B100C84E20 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C91019DB264832A200C84E20 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C91299FE25FE325D00FBCF00 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		C9129A0325FE379F00FBCF00 /* BooksList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BooksList.txt; sourceTree = "<group>"; };
 		C9129A0925FE37B700FBCF00 /* Image_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image_03.png; sourceTree = "<group>"; };
@@ -95,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91019D32648286400C84E20 /* GalleryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C91019D42648288F00C84E20 /* GalleryViewController.swift */,
+				C91019D8264829B100C84E20 /* GalleryCollectionViewCell.swift */,
+				C91019DB264832A200C84E20 /* ImagePicker.swift */,
+			);
+			path = GalleryViewController;
+			sourceTree = "<group>";
+		};
 		C91299FD25FE322C00FBCF00 /* BooksViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +242,7 @@
 		C9D8F62125E2C84600D0DDF9 /* TabsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C91019D32648286400C84E20 /* GalleryViewController */,
 				C91299FD25FE322C00FBCF00 /* BooksViewController */,
 				C9D8F63125E2D30B00D0DDF9 /* PersonalViewController */,
 				C9D8F63025E2D2F100D0DDF9 /* PaintViewController */,
@@ -352,13 +369,16 @@
 				C9129A1F25FE38E100FBCF00 /* Book.swift in Sources */,
 				C9252B3125D1958C009E6C1B /* PersonalViewController.swift in Sources */,
 				C9D8F62D25E2C94E00D0DDF9 /* PieChartView.swift in Sources */,
+				C91019DC264832A200C84E20 /* ImagePicker.swift in Sources */,
 				C91299FF25FE325D00FBCF00 /* BooksViewController.swift in Sources */,
 				C9129A2725FE596800FBCF00 /* BookTableViewCell.swift in Sources */,
 				C9252B2D25D1958C009E6C1B /* AppDelegate.swift in Sources */,
 				C9337BB8262B4607006F90E8 /* BookFullInfoViewController.swift in Sources */,
 				C9252B2F25D1958C009E6C1B /* SceneDelegate.swift in Sources */,
 				C9D8F62A25E2C94200D0DDF9 /* GraphicView.swift in Sources */,
+				C91019D52648288F00C84E20 /* GalleryViewController.swift in Sources */,
 				C9337BBE262B49B8006F90E8 /* BookInfoTableViewCell.swift in Sources */,
+				C91019D9264829B100C84E20 /* GalleryCollectionViewCell.swift in Sources */,
 				C9D8F61F25E2C1C100D0DDF9 /* PaintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
